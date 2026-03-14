@@ -19,21 +19,6 @@ The project demonstrates a **complete ML pipeline**, including:
 
 # 🖥️ Application Preview
 
-Example interface of the prediction app.
-
-> *(Add a screenshot of your UI here)*
-
-```
-screenshots/app_ui.png
-```
-
-Example:
-
-```markdown
-![App Screenshot](screenshots/app_ui.png)
-```
-
----
 
 # 🚀 How to Run This Project
 
