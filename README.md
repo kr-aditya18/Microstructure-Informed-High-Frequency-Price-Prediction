@@ -1,100 +1,172 @@
-📈 Microstructure-Informed High Frequency Price Prediction
+# 📈 Microstructure-Informed High Frequency Price Prediction
 
-This project predicts whether a stock price will go UP or DOWN using a Machine Learning model (Random Forest) and deploys it using a Flask web application.
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Flask](https://img.shields.io/badge/Flask-Web%20App-black)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![License](https://img.shields.io/badge/Project-ML%20Deployment-green)
 
-The project demonstrates the complete ML pipeline, from data preprocessing and model training to deployment with a web interface.
+This project predicts whether a **stock price will go UP or DOWN** using a **Machine Learning model (Random Forest)** and deploys it through a **Flask web application**.
 
-🚀 How to Run This Project
+The project demonstrates a **complete ML pipeline**, including:
 
-Follow the commands below step-by-step.
+- Data preprocessing  
+- Feature engineering  
+- Model training  
+- Model evaluation  
+- Model deployment using Flask  
 
-1️⃣ Clone the Repository
+---
+
+# 🖥️ Application Preview
+
+Example interface of the prediction app.
+
+> *(Add a screenshot of your UI here)*
+
+```
+screenshots/app_ui.png
+```
+
+Example:
+
+```markdown
+![App Screenshot](screenshots/app_ui.png)
+```
+
+---
+
+# 🚀 How to Run This Project
+
+Follow these commands step-by-step.
+
+## 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/YOUR_USERNAME/stock-price-prediction-app.git
-2️⃣ Go Into the Project Folder
+```
+
+---
+
+## 2️⃣ Go Into the Project Folder
+
+```bash
 cd stock-price-prediction-app
-3️⃣ Create Virtual Environment
+```
+
+---
+
+## 3️⃣ Create Virtual Environment
+
+```bash
 python -m venv venv
-4️⃣ Activate Virtual Environment
-Windows
+```
+
+---
+
+## 4️⃣ Activate Virtual Environment
+
+### Windows
+
+```bash
 venv\Scripts\activate
-Mac / Linux
+```
+
+### Mac / Linux
+
+```bash
 source venv/bin/activate
+```
 
 After activation your terminal should look like:
 
+```
 (venv)
-5️⃣ Install Required Libraries
+```
+
+---
+
+## 5️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-This installs the necessary dependencies:
+Installed libraries include:
 
-Flask
+- Flask  
+- scikit-learn  
+- numpy  
+- joblib  
 
-scikit-learn
+---
 
-numpy
+## 6️⃣ Run the Application
 
-joblib
-
-6️⃣ Run the Application
+```bash
 python app.py
+```
 
 You should see:
 
+```
 Running on http://127.0.0.1:5000
-7️⃣ Open the Web Application
+```
+
+---
+
+## 7️⃣ Open the Web Application
 
 Open your browser and go to:
 
+```
 http://127.0.0.1:5000
+```
 
-You will see the Stock Price Prediction Web Interface.
+You will see the **Stock Price Prediction Interface**.
 
-🧪 Example Input Values
+---
+
+# 🧪 Example Input Values
 
 Use realistic values similar to the dataset.
 
-Feature	Example
-Open	0.45
-High	0.47
-Low	0.44
-Close	0.46
-Volume	3000000
-MA10	0.45
-MA50	0.46
-Price Change	0.01
+| Feature | Example |
+|------|------|
+| Open | 0.45 |
+| High | 0.47 |
+| Low | 0.44 |
+| Close | 0.46 |
+| Volume | 3000000 |
+| MA10 | 0.45 |
+| MA50 | 0.46 |
+| Price Change | 0.01 |
 
-Click Predict to see the prediction.
+Then click **Predict**.
 
-🧠 Machine Learning Pipeline
+---
 
-The following ML workflow was implemented:
+# 🧠 Machine Learning Pipeline
 
-Problem Definition
+This project follows the standard ML development workflow:
 
-Data Collection
+1️⃣ Problem Definition  
+2️⃣ Data Collection  
+3️⃣ Data Preprocessing  
+4️⃣ Exploratory Data Analysis (EDA)  
+5️⃣ Feature Engineering  
+6️⃣ Train-Test Split  
+7️⃣ Model Selection  
+8️⃣ Model Training  
+9️⃣ Model Evaluation  
+🔟 Hyperparameter Tuning  
+1️⃣1️⃣ Model Deployment  
+1️⃣2️⃣ Web Interface using Flask  
 
-Data Preprocessing
+---
 
-Exploratory Data Analysis (EDA)
+# 📂 Project Structure
 
-Feature Engineering
-
-Train-Test Split
-
-Model Selection
-
-Model Training
-
-Model Evaluation
-
-Hyperparameter Tuning
-
-Model Deployment
-
-Web Interface using Flask
-
-📂 Project Structure
+```
 stock-price-prediction-app
 │
 ├── app.py
@@ -108,24 +180,41 @@ stock-price-prediction-app
 ├── dataset
 │   └── AAPL.csv
 │
-└── notebooks
-    └── stock_price_prediction.ipynb
-⚙️ Technologies Used
+├── notebooks
+│   └── stock_price_prediction.ipynb
+│
+└── screenshots
+    └── app_ui.png
+```
 
-Python
+---
 
-Flask
+# ⚙️ Technologies Used
 
-scikit-learn
+- Python  
+- Flask  
+- scikit-learn  
+- NumPy  
+- Joblib  
+- HTML / Bootstrap  
 
-NumPy
+---
 
-Joblib
+# 📊 Future Improvements
 
-HTML / Bootstrap
+Possible improvements for this project:
 
-👨‍💻 Author
+- Add **prediction confidence (%)**
+- Use **live stock market API**
+- Add **data visualization dashboard**
+- Deploy on **AWS / Render / Docker**
 
-Aditya Kumar Verma
-B.Tech Information Technology
+---
+
+# 👨‍💻 Author
+
+**Aditya Kumar Verma**  
+B.Tech Information Technology  
 Noida Institute of Engineering and Technology (NIET)
+
+GitHub: https://github.com/YOUR_USERNAME
