@@ -1,63 +1,131 @@
-# Microstructure-Informed High Frequency Price Prediction
+📈 Microstructure-Informed High Frequency Price Prediction
 
-This project predicts whether a stock price will increase or decrease using machine learning.
+This project predicts whether a stock price will go UP or DOWN using a Machine Learning model (Random Forest) and deploys it using a Flask web application.
 
-The model was trained using Random Forest and deployed using a Flask web application.
+The project demonstrates the complete ML pipeline, from data preprocessing and model training to deployment with a web interface.
 
-## Project Pipeline
+🚀 How to Run This Project
 
-1. Problem Definition
-2. Data Collection
-3. Data Preprocessing
-4. Exploratory Data Analysis
-5. Feature Engineering
-6. Train-Test Split
-7. Model Selection
-8. Model Training
-9. Model Evaluation
-10. Hyperparameter Tuning
-11. Model Deployment
-12. UI Interface
+Follow the commands below step-by-step.
 
-## Setup Instructions
-
-### 1 Create virtual environment
-
+1️⃣ Clone the Repository
+git clone https://github.com/YOUR_USERNAME/stock-price-prediction-app.git
+2️⃣ Go Into the Project Folder
+cd stock-price-prediction-app
+3️⃣ Create Virtual Environment
 python -m venv venv
-
-### 2 Activate environment
-
+4️⃣ Activate Virtual Environment
 Windows
-
 venv\Scripts\activate
-
-Mac/Linux
-
+Mac / Linux
 source venv/bin/activate
 
-### 3 Install dependencies
+After activation your terminal should look like:
 
+(venv)
+5️⃣ Install Required Libraries
 pip install -r requirements.txt
 
-### 4 Run application
+This installs the necessary dependencies:
 
+Flask
+
+scikit-learn
+
+numpy
+
+joblib
+
+6️⃣ Run the Application
 python app.py
 
-### 5 Open browser
+You should see:
+
+Running on http://127.0.0.1:5000
+7️⃣ Open the Web Application
+
+Open your browser and go to:
 
 http://127.0.0.1:5000
 
-## Example Input
+You will see the Stock Price Prediction Web Interface.
 
-Open: 0.45  
-High: 0.47  
-Low: 0.44  
-Close: 0.46  
-Volume: 3000000  
-MA10: 0.45  
-MA50: 0.46  
-Price Change: 0.01
+🧪 Example Input Values
 
-## Output
+Use realistic values similar to the dataset.
 
-Prediction: Stock Price will go UP or DOWN
+Feature	Example
+Open	0.45
+High	0.47
+Low	0.44
+Close	0.46
+Volume	3000000
+MA10	0.45
+MA50	0.46
+Price Change	0.01
+
+Click Predict to see the prediction.
+
+🧠 Machine Learning Pipeline
+
+The following ML workflow was implemented:
+
+Problem Definition
+
+Data Collection
+
+Data Preprocessing
+
+Exploratory Data Analysis (EDA)
+
+Feature Engineering
+
+Train-Test Split
+
+Model Selection
+
+Model Training
+
+Model Evaluation
+
+Hyperparameter Tuning
+
+Model Deployment
+
+Web Interface using Flask
+
+📂 Project Structure
+stock-price-prediction-app
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── stock_price_model.pkl
+│
+├── templates
+│   └── index.html
+│
+├── dataset
+│   └── AAPL.csv
+│
+└── notebooks
+    └── stock_price_prediction.ipynb
+⚙️ Technologies Used
+
+Python
+
+Flask
+
+scikit-learn
+
+NumPy
+
+Joblib
+
+HTML / Bootstrap
+
+👨‍💻 Author
+
+Aditya Kumar Verma
+B.Tech Information Technology
+Noida Institute of Engineering and Technology (NIET)
